@@ -14,7 +14,7 @@ public class ProviderController {
     }
     @Autowired
     private RestTemplate restTemplate;
-    @GetMapping("/provider")
+    @GetMapping(name="/provider")
     public String con(){
 
        return "provider";

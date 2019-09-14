@@ -10,6 +10,6 @@ public class TestController {
     private FeignService feignService;
     @GetMapping("/feign")
     public String t(){
-        return feignService.test();
+        return feignService.test2();
     }
 }

@@ -11,7 +11,6 @@
 
     <artifactId>feign</artifactId>
     <dependencies>
-
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
@@ -25,11 +24,6 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-openfeign</artifactId>
             <version>RELEASE</version>
-        </dependency>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-netflix-eureka-server</artifactId>
-            <version>2.0.0.RELEASE</version>
         </dependency>
     </dependencies>
 
