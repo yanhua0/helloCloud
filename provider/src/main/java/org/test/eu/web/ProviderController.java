@@ -2,9 +2,11 @@ package org.test.eu.web;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
-import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
+
+import java.util.List;
 
 @RestController
 public class ProviderController {
@@ -14,9 +16,9 @@ public class ProviderController {
     }
     @Autowired
     private RestTemplate restTemplate;
-    @GetMapping(name="/provider")
-    public String con(){
-
+    @PostMapping(name="/provider")
+    public String con(List<String> list){
+       System.out.println(list);
        return "provider";
     }
 }
